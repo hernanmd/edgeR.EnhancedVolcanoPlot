@@ -1,14 +1,25 @@
+# Enhanced Volcano Plot from edgeR data Script version 1.0
+# Authors: Hernan Morales, Mar√a Elena Fernandez
+# Date: 26/06/2018
+#
+# Input Files:
+#   edgeR output matrix text file
+# Output Files:
+#   Plot
 
+# Install Enhanced Volcano Plot package from GitHub
 install.packages("devtools")
 devtools::install_github("kevinblighe/EnhancedVolcano")
 library("EnhancedVolcano")
 # Set up working directory
 setwd("/Users/mvs/Downloads")
+# Set input file name
+inputFileName <- "volcanotes.txt"
 
 #######DIET across TESTIS######################
 
 # Import edgeR data
-volcanodata <- read.table("volcanotes.txt", header=TRUE, sep="\t",dec = ",")
+volcanodata <- read.table(inputFileName, header=TRUE, sep="\t",dec = ",")
 colnames(volcanodata)
 # Set up edgeR compatible column names
 colnames(volcanodata) <- c("Gene","pvalue","FC","FDR","absFC","logFC")
