@@ -1,5 +1,5 @@
 # Enhanced Volcano Plot from edgeR data Script version 1.0
-# Authors: Hernan Morales, Mar√a Elena Fernandez
+# Authors: Hernan Morales, Mari√a Elena Fernandez
 # Date: 26/06/2018
 #
 # Input Files:
